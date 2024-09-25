@@ -1,1 +1,2 @@
-# Lista_de_exercicios_1_revisao
+# Lista de exercícios 1 - Revisão
+## Prithee, be careful.
