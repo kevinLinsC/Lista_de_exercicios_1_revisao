@@ -16,7 +16,6 @@ import java.io.IOException;
 public class PROJETO_03_KEVIN {
 
     public static void main(String[] args) throws IOException {
-        
         int numUm;
         int numDois;
         int soma;

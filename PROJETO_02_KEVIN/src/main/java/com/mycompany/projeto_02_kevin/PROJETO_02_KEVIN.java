@@ -26,10 +26,9 @@ public class PROJETO_02_KEVIN {
         
         numDois = pegaNum("Digite o segundo numero: ");
         System.out.println("------------------------");
-        
-        soma = numUm + numDois;
-        
+
         if (numUm >= 0 && numDois >= 0) {
+            soma = numUm + numDois;
             System.out.println("Soma de " + numUm + " com " + numDois + " = " + soma);
         }
         else {

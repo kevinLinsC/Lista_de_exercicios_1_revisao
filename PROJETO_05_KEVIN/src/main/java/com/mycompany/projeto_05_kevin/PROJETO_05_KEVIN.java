@@ -43,7 +43,7 @@ public class PROJETO_05_KEVIN {
                     break;
                 }
                 else {
-                    System.out.println("ERRO! Digite um numero positivo.");
+                    System.out.println("ERRO! Digite um numero positivo ou maior que zero.");
                 }
             } catch (NumberFormatException e) {
                 System.out.println("ERRO! Digite um numero inteiro.");
