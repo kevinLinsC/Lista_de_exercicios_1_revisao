@@ -20,12 +20,13 @@ public class PROJETO_03_KEVIN {
         int numDois;
         int soma;
         
-        numUm = pegaNum("Digite o primeiro numero: ");
-        System.out.println("------------------------");
+        numUm = PegaNum("Digite o primeiro numero: ");
+        Linha();
         
-        numDois = pegaNum("Digite o segundo numero: ");
-        System.out.println("------------------------");
+        numDois = PegaNum("Digite o segundo numero: ");
+        Linha();
         
+        // Verifica se os numeros são ambos positivos ou ambos negativos.
         if ((numUm >= 0 && numDois >= 0) || (numUm < 0 && numDois < 0)) {
             soma = numUm + numDois;
             System.out.println("Soma de " + numUm + " com " + numDois + " = " + soma);
@@ -36,10 +37,13 @@ public class PROJETO_03_KEVIN {
         
     }
     
-    public static int pegaNum(String texto) throws IOException {
+    // Trata o erro de input.
+    public static int PegaNum(String texto) throws IOException {
         DataInputStream dado;
         String s;
         int num;
+        
+        // Usuario não sai enquanto não digitar um numero inteiro.
         while (true) {
             System.out.print(texto);
             dado = new DataInputStream(System.in);
@@ -53,5 +57,9 @@ public class PROJETO_03_KEVIN {
         }
         
         return num;
+    }
+    
+    public static void Linha() {
+        System.out.println("-------------------------------------");
     }
 }

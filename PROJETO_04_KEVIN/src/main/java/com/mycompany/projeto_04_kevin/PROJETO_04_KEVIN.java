@@ -20,14 +20,15 @@ public class PROJETO_04_KEVIN {
         String nomeTrian; // Nome do triangulo.
         
         A = pegaNum("Digite o primeiro lado do triangulo: ");
-        System.out.println("----------------------------------");
+        Linha();
         
         B = pegaNum("Digite o segundo lado do triangulo: ");
-        System.out.println("----------------------------------");
+        Linha();
         
         C = pegaNum("Digite o terceiro lado do triangulo: ");
-        System.out.println("----------------------------------");
+        Linha();
         
+        // Verifica se os numeros formam um triangulo.
         if ((A + B > C) && (A + C > B) && (B + C > A)) {
             nomeTrian = verifiTriangulo(A, B, C);
             System.out.println("Os numeros formam um triangulo " + nomeTrian);
@@ -37,6 +38,7 @@ public class PROJETO_04_KEVIN {
         }
     }
     
+    // Verifica qual é o triangulo.
     public static String verifiTriangulo(float A, float B, float C) {
         String nomeTrian;
         
@@ -76,5 +78,9 @@ public class PROJETO_04_KEVIN {
         }
         
         return num;
+    }
+    
+    public static void Linha() {
+        System.out.println("-------------------------------------");
     }
 }
